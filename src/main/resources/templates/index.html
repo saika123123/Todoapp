@@ -60,13 +60,25 @@
         </div>
         <div class="row">
             <div class="col">
-                <div class="col">
-                    <label for="mytasklist" class="form-label mt-3">完了済みを削除</label>
-                    <form method="post" th:action="@{/delete}">
-                        <input type="submit" value="完了済みを削除" />
-                    </form>
-                </div>
+                <label for="mytasklist" class="form-label mt-3">完了済みを削除</label>
+                <form method="post" th:action="@{/delete}">
+                    <input type="submit" value="完了済みを削除" />
+                </form>
             </div>
+        </div>
+        
+        <div class="row">
+            <div class="col">
+                <form th:action="@{/logout}" method="post">
+                    <input type="submit" name="logout" value="ログアウト" />
+                </form>
+            </div>
+    
+        </div>
+        
+    </div>
+
+    
 
 
 

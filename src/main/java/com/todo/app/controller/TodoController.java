@@ -16,7 +16,7 @@ public class TodoController {
     @Autowired
     TodoMapper todoMapper;
 
-    @RequestMapping(value="/")
+    @RequestMapping(value="/todo")
     public String index(Model model) {
 
 //      List<Todo> list = todoMapper.selectAll();
